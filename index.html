@@ -23,6 +23,12 @@
     .container {
       max-width: 640px;
       margin: 0 auto;
+      animation: fadein 1s ease both;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
     header {
@@ -35,6 +41,23 @@
       font-size: 16px;
       font-weight: normal;
       color: #e0e0e0;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 0.85em;
+      background: #e0e0e0;
+      vertical-align: baseline;
+      position: relative;
+      top: 0.14em;
+      margin-left: 2px;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
     }
 
     header p {
@@ -115,7 +138,7 @@
 <body>
   <div class="container">
     <header>
-      <h1>robromo.dev/</h1>
+      <h1>robromo.dev/<span class="cursor"></span></h1>
       <p>Index of my projects</p>
     </header>
 
