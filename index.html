@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>robromo.dev</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #c9c9c9;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 32px;
+      border-bottom: 1px solid #2a2a2a;
+      padding-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #e0e0e0;
+    }
+
+    header p {
+      color: #555;
+      margin-top: 4px;
+      font-size: 12px;
+    }
+
+    .listing {
+      list-style: none;
+    }
+
+    .listing li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .listing li:last-child {
+      border-bottom: none;
+    }
+
+    .icon {
+      color: #444;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: #444;
+    }
+
+    .desc svg {
+      width: 11px;
+      height: 11px;
+      stroke: #4a4a4a;
+      vertical-align: middle;
+      margin-right: 3px;
+    }
+
+    .listing a {
+      color: #7eb8f7;
+      text-decoration: none;
+      flex: 1;
+    }
+
+    .listing a:hover {
+      color: #aed4ff;
+      text-decoration: underline;
+    }
+
+    .desc {
+      color: #4a4a4a;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #333;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>robromo.dev/</h1>
+      <p>Index of projects</p>
+    </header>
+
+    <ul class="listing">
+      <li>
+        <span class="icon"><i data-lucide="chevron-right"></i></span>
+        <a href="https://backpacking.robromo.dev" target="_blank" rel="noopener">backpacking.robromo.dev</a>
+        <span class="desc"><i data-lucide="mountain"></i> backpacking</span>
+      </li>
+      <li>
+        <span class="icon"><i data-lucide="chevron-right"></i></span>
+        <a href="https://bagbob.robromo.dev" target="_blank" rel="noopener">bagbob.robromo.dev</a>
+        <span class="desc"><i data-lucide="backpack"></i> bagbob</span>
+      </li>
+      <li>
+        <span class="icon"><i data-lucide="chevron-right"></i></span>
+        <a href="https://smokystreams.robromo.dev" target="_blank" rel="noopener">smokystreams.robromo.dev</a>
+        <span class="desc"><i data-lucide="map"></i> smoky streams</span>
+      </li>
+    </ul>
+
+    <footer>robromo.dev &mdash; 2026</footer>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
